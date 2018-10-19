@@ -1,15 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import NavBar from './NavBar.jsx'
+import Main from './Main.jsx'
+import Portfolio from './Portfolio.jsx'
 
-class App extends Component {
-  state = {};
+const notFound = () => <h2>Oh no, it is 404 all over again!</h2>
 
-  render() {
-    return(
-      <div>
-        This is an App Component.
-      </div>
-    )
-  }
-};
+const App = () => (
+  <BrowserRouter>
+    <div className='app'>
+      <NavBar buttons={['About Me', 'Portfolio', 'Resume', 'Contact']} />
+      <Switch>
+        <Route exact path='/' component={Main} />
+        <Route component={notFound} />
+      </Switch>
+      <Portfolio />
 
-export default App;
+    </div>
+  </BrowserRouter>
+)
+
+export default App

@@ -1,0 +1,21 @@
+{
+  "stack": {
+    "mongo": "mongo.img",
+    "react": "react.jpg",
+    "express": "express.jpg",
+    "node": "node.jpg",
+    "postgres": "postgres.jpg"
+  },
+  "portfolio": [
+    {
+      "title": "Game Of Hosts",
+      "stack": ["mongo"],
+      "img": "airbnb.jpg"
+    },
+    {
+      "title": "Welp",
+      "stack": ["postgres"],
+      "img": "welp.jpg"
+    }
+  ]
+}
