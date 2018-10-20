@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import PortfolioItem from './PortfolioItem.jsx'
-import { portfolio } from '../content/portfolio.json'
+import PortfolioItem from '../PortfolioItem/PortfolioItem.jsx'
+import { portfolio } from '../../content/portfolio.json'
 
 class Portfolio extends Component {
   render () {
@@ -8,9 +8,7 @@ class Portfolio extends Component {
       <div className='portfolio'>
         <h3> Portfolio </h3>
         <h5>Prints the list of works</h5>
-        {portfolio.map((item, i) => {
-          return <PortfolioItem work={item} key={i} />
-        })}
+        {portfolio.map(item => <PortfolioItem work={item} key={item._id} />)}
       </div>
     )
   }

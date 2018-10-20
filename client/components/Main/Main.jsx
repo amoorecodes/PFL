@@ -4,8 +4,7 @@ class Main extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      hey: 'hey',
-      gay: 'you'
+      hey: 'hey'
     }
   }
 

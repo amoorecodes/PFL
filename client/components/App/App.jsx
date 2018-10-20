@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import NavBar from './NavBar.jsx'
-import Main from './Main.jsx'
-import Portfolio from './Portfolio.jsx'
+import NavBar from '../NavBar/NavBar.jsx'
+import Main from '../Main/Main.jsx'
+import Portfolio from '../Portfolio/Portfolio.jsx'
 
 const notFound = () => <h2>Oh no, it is 404 all over again!</h2>
 
