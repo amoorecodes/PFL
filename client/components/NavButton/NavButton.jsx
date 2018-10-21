@@ -1,10 +1,11 @@
 import React from 'react'
+import { Wrapper, Button } from './NavButtonUI.jsx'
 
 const NavButton = props => {
   return (
-    <div>
-      <button>{props.option}</button>
-    </div>
+    <Wrapper>
+      <Button>{props.option}</Button>
+    </Wrapper>
   )
 }
 

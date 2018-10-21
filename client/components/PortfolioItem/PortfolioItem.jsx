@@ -1,19 +1,18 @@
 import React from 'react'
 import { stack } from '../../content/portfolio.json'
+import Wrapper from './PortfolioItemUI.jsx'
+import { Title, Details, Text } from '../../styles/globals.jsx'
 
 const PortfolioItem = props => {
   return (
-    <div className='portfolio-item'>
-      <h2>{props.work.title}</h2>
-      <h3>
-        {props.work.stack.map(library => {
-          return <div key={library._id}>{stack[library].img}</div>
-        })}
-      </h3>
-      <img alt={`Render of ${props.work.title}`} src='' />
-      <h4>{props.work.img}</h4>
-      <h4>{props.work.description}</h4>
-    </div>
+    <Wrapper>
+      <Title>{props.work.title}</Title>
+      {props.work.stack.map(library => {
+        return <div key={library._id}>{stack[library].img}</div>
+      })}
+      <img alt={`Render of ${props.work.title}`} src={`${props.work.img}`} />
+      <Text>{props.work.description}</Text>
+    </Wrapper>
   )
 }
 

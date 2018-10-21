@@ -1,4 +1,11 @@
 import React, { Component } from 'react'
+import {
+  PageWrapper,
+  BigTitle,
+  Title,
+  Details,
+  Text
+} from '../../styles/globals.jsx'
 
 class Main extends Component {
   constructor (props) {
@@ -10,17 +17,20 @@ class Main extends Component {
 
   render () {
     return (
-      <div>
-        <h1>Arthur Ryabtsev</h1>
-        <h2>software engineer</h2>
-        <pre>
+      <PageWrapper>
+        <BigTitle>Arthur Ryabtsev</BigTitle>
+        <Title>software engineer</Title>
+        {/* <pre>
           <code>
             prints the state onto the DOM
 
             {JSON.stringify(this.state, null, 4)}
           </code>
-        </pre>
-      </div>
+        </pre> */}
+        <Text>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, molestiae. Quis eveniet temporibus excepturi est labore adipisci, placeat itaque, ab dolor possimus quod ullam repudiandae! Harum eveniet laboriosam ducimus eligendi.
+        </Text>
+      </PageWrapper>
     )
   }
 }
